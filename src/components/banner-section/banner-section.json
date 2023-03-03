@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_banner_section_banner_sections",
+  "info": {
+    "displayName": "Banner_Section"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Banner_Image": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Show_Reviews": {
+      "type": "boolean"
+    },
+    "CTA": {
+      "displayName": "CTA",
+      "type": "component",
+      "repeatable": true,
+      "component": "cta.cta"
+    }
+  }
+}

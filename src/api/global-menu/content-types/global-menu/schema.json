@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_menus",
+  "info": {
+    "singularName": "global-menu",
+    "pluralName": "global-menus",
+    "displayName": "Global_Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Top_Menus": {
+      "displayName": "Top_Menu",
+      "type": "component",
+      "repeatable": true,
+      "component": "menu-item.top-menu"
+    },
+    "Burger_Menus": {
+      "displayName": "Burger_Menus",
+      "type": "component",
+      "repeatable": true,
+      "component": "menu-item.burger-menus"
+    }
+  }
+}

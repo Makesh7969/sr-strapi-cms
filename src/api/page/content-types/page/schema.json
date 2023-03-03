@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Page_Class": {
+      "type": "string"
+    },
+    "Layout": {
+      "type": "enumeration",
+      "enum": [
+        "landing_template",
+        "home_template",
+        "static_template",
+        "form_template",
+        "without_banner_template"
+      ]
+    },
+    "Seo_Meta": {
+      "displayName": "SEO",
+      "type": "component",
+      "repeatable": false,
+      "component": "seo-meta.seo"
+    },
+    "Add_Component": {
+      "type": "dynamiczone",
+      "components": [
+        "cta.cta"
+      ]
+    },
+    "Banner_Section": {
+      "displayName": "Banner_Section",
+      "type": "component",
+      "repeatable": false,
+      "component": "banner-section.banner-section"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu",
+      "mappedBy": "page"
+    }
+  }
+}

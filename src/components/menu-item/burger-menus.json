@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_burger_menu_burger_menus",
+  "info": {
+    "displayName": "Burger_Menus",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Custom_Link": {
+      "type": "string"
+    },
+    "Target": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "_blank"
+      ]
+    },
+    "Burger_Sub_Menus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu-item.sub-menu"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    }
+  }
+}

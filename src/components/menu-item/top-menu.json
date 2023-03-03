@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_menu_item_top_menus",
+  "info": {
+    "displayName": "Top_Menu"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Custom_Link": {
+      "type": "string"
+    },
+    "Target": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "_blank"
+      ],
+      "default": "none"
+    },
+    "Sub_Menu_Item": {
+      "displayName": "Sub_Menu",
+      "type": "component",
+      "repeatable": true,
+      "component": "menu-item.sub-menu"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sub_menu_items_sub_menus",
+  "info": {
+    "displayName": "Sub_Menu",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Custom_Link": {
+      "type": "string"
+    },
+    "Target": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "_blank"
+      ],
+      "default": "none"
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
+    }
+  }
+}

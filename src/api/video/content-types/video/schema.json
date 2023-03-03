@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "videos",
+  "info": {
+    "singularName": "video",
+    "pluralName": "videos",
+    "displayName": "Video"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Thumbnail": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Video_Url": {
+      "type": "string"
+    },
+    "video_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::video-category.video-category",
+      "inversedBy": "videos"
+    }
+  }
+}

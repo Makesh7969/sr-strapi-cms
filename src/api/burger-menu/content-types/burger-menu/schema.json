@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "burger_menus",
+  "info": {
+    "singularName": "burger-menu",
+    "pluralName": "burger-menus",
+    "displayName": "Burger_Menu"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Custom_Link": {
+      "type": "string"
+    },
+    "Add_Menu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu-item.burger-menus"
+    }
+  }
+}
