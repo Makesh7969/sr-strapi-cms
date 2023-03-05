@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_components_image_with_contents",
+  "info": {
+    "displayName": "Image With Content"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Tile_Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Flag": {
+      "type": "string"
+    },
+    "Alignment_Type": {
+      "type": "enumeration",
+      "enum": [
+        "left_image",
+        "right_image"
+      ]
+    }
+  }
+}

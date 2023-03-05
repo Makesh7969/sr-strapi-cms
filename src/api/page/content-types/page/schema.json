@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,7 +26,8 @@
         "static_template",
         "form_template",
         "without_banner_template"
-      ]
+      ],
+      "default": "landing_template"
     },
     "Seo_Meta": {
       "displayName": "SEO",
@@ -36,7 +38,8 @@
     "Add_Component": {
       "type": "dynamiczone",
       "components": [
-        "cta.cta"
+        "components.image-with-content",
+        "components.select-collection"
       ]
     },
     "Banner_Section": {

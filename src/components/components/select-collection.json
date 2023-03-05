@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_components_select_collections",
+  "info": {
+    "displayName": "Select_Collection"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Heading": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Choose_Collection": {
+      "type": "enumeration",
+      "enum": [
+        "videos_listing",
+        "videos_slider",
+        "team_listing",
+        "team_slider"
+      ]
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": true,
+      "component": "cta.cta"
+    },
+    "Layout": {
+      "type": "enumeration",
+      "enum": [
+        "white",
+        "black",
+        "gray"
+      ]
+    }
+  }
+}

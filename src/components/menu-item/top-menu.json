@@ -1,7 +1,8 @@
 {
   "collectionName": "components_menu_item_top_menus",
   "info": {
-    "displayName": "Top_Menu"
+    "displayName": "Top_Menu",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -24,6 +25,11 @@
       "type": "component",
       "repeatable": true,
       "component": "menu-item.sub-menu"
+    },
+    "CTA_Link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
     }
   }
 }

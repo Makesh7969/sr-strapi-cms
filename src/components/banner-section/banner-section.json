@@ -1,7 +1,8 @@
 {
   "collectionName": "components_banner_section_banner_sections",
   "info": {
-    "displayName": "Banner_Section"
+    "displayName": "Banner_Section",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -9,12 +10,13 @@
       "type": "string"
     },
     "Banner_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Show_Reviews": {
       "type": "boolean"

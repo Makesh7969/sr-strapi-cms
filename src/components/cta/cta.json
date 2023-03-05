@@ -1,7 +1,8 @@
 {
   "collectionName": "components_cta_ctas",
   "info": {
-    "displayName": "CTA"
+    "displayName": "CTA",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -26,7 +27,13 @@
       "enum": [
         "none",
         "_blank"
-      ]
+      ],
+      "default": "none"
+    },
+    "CTA_Link": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::menu.menu"
     }
   }
 }
